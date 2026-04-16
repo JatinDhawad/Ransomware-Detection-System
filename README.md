@@ -51,6 +51,7 @@ ransomware-detection-system/
 ├── create_key.py
 ├── test_data/
 └── README.md
+```
 
 How It Works
 1. Start Attack
