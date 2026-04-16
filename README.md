@@ -55,27 +55,33 @@ ransomware-detection-system/
 
 How It Works
 1. Start Attack
-Simulates ransomware attack
-Encrypts files in test_data/
-Renames them to .locked
+ - Simulates ransomware attack
+ - Encrypts files in test_data/
+ - Renames them to .locked
 2. Monitor Activity
-Tracks newly created .locked files
-Counts suspicious file encryption events
+ - Tracks newly created .locked files
+ - Counts suspicious file encryption events
 3. Detect Threat
-If encrypted file count exceeds threshold:
-Flags ransomware
-Stops attack immediately
+ - If encrypted file count exceeds threshold:
+ - Flags ransomware
+ - Stops attack immediately
 4. Recover Files
-User enters decryption key
-Files restored to original state
+ - User enters decryption key
+ - Files restored to original state
 
 Setup Instructions
 Install Dependencies
+```
 pip install cryptography
+```
 Generate Encryption Key
+```
 python create_key.py
+```
 Run Application
+```
 python gui.py
+```
 Detection Logic
 
 The system uses behavior-based detection:
@@ -83,18 +89,18 @@ The system uses behavior-based detection:
 If the number of encrypted .locked files created in a short time exceeds a predefined threshold, the system classifies the activity as ransomware.
 
 Limitations
-Monitors only specified folder (test_data)
-Threshold-based detection may cause false positives
-Educational simulation only (not production security software)
+ - Monitors only specified folder (test_data)
+ - Threshold-based detection may cause false positives
+ - Educational simulation only (not production security software)
 Educational Purpose
 
 This project is built for academic demonstration of:
 
-Malware Simulation
-Ransomware Behavior
-Behavioral Threat Detection
-Real-Time Attack Prevention
-Incident Recovery Mechanisms
+ - Malware Simulation
+ - Ransomware Behavior
+ - Behavioral Threat Detection
+ - Real-Time Attack Prevention
+ - Incident Recovery Mechanisms
 
 Author
 
