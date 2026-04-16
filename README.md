@@ -53,7 +53,7 @@ ransomware-detection-system/
 └── README.md
 ```
 
-How It Works
+# How It Works
 1. Start Attack
  - Simulates ransomware attack
  - Encrypts files in test_data/
@@ -69,7 +69,7 @@ How It Works
  - User enters decryption key
  - Files restored to original state
 
-Setup Instructions
+# Setup Instructions
 Install Dependencies
 ```
 pip install cryptography
@@ -82,17 +82,17 @@ Run Application
 ```
 python gui.py
 ```
-Detection Logic
+# Detection Logic
 
 The system uses behavior-based detection:
 
 If the number of encrypted .locked files created in a short time exceeds a predefined threshold, the system classifies the activity as ransomware.
 
-Limitations
+# Limitations
  - Monitors only specified folder (test_data)
  - Threshold-based detection may cause false positives
  - Educational simulation only (not production security software)
-Educational Purpose
+# Educational Purpose
 
 This project is built for academic demonstration of:
 
@@ -102,19 +102,9 @@ This project is built for academic demonstration of:
  - Real-Time Attack Prevention
  - Incident Recovery Mechanisms
 
-Author
+# Author
 
 Developed as part of Cyber Security Mini Project.
 
 
 ---
-
-# Optional Suggestion
-
-After adding README:
-- GitHub repo will look much more professional
-- Helps faculty/recruiters understand project instantly
-
----
-
-If you want, I can help you refine it further (badges, screenshots, demo GIF, architecture diagram, etc.) or assist with any other project materials.
